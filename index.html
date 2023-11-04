@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300&family=Satisfy&display=swap');
+   </style>
+    <link rel="stylesheet" type="text/css" href="index.css">
+   
+</head>
+<body>
+    <div class="container">
+       <div class="weather-app" align="center">
+            <h2 id="title1"  > &#x26C5; WEATHER FORECAST &#x26C5;</h2>
+             <br/>
+       <div align="center">
+            
+            <input type="text" id="cityname" required placeholder="Enter a city name">
+            
+            <button type="button" onclick="fetchData()" >Search</button>
+       </div>
+     <br/>
+       <div class="result">
+            <span>Country/City :  <span id="city"></span></span><br/>
+            <span>Description :  <span  id="desc"></span></span><br/>
+            <span>Wind Speed : <span id="windspeed"></span> </span><br/>
+            <span>Temparture : <span id="temp"></span> </span><br/>
+            <span>Humidity : <span id="hum"></span></span><br/>
+       </div>
+       </div>
+      </div>
+        
+        <script src="script.js"></script>
+    
+</body>
+</html>
